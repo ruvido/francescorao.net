@@ -1,18 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/assets/site.css" />
-</head>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-<body class="main">
-    <header>
-    </header>
-    <section class="content">
-	    {{ content }}
-    </section>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png"  href="{{site.baseurl}}/images/favicon.png">
+      
+        <title>{{ page.title }}</title>
+        <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+      
+        <link rel="stylesheet" href="{{site.baseurl}}/assets/main.css" | relative_url }}">
+        <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
+      
+      </head>
+  <body>
+
+	  <p>questo é il layout default</p>
+    {{content}}
+
     <footer>
     </footer>
-</body>
+
+  </body>
+
 </html>

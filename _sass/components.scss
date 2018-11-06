@@ -1,0 +1,60 @@
+
+.container {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.6;
+    padding: 1.4rem;
+    max-width: $tablet;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    padding: 4rem 0 0 0;
+    img {
+        max-width: 100%;
+    }
+}
+
+.list-dates {
+    margin: 0 auto;
+    padding: 0 0;
+    // background: red;
+}
+
+.el-dates {
+    padding: 0.4rem 0;
+    // border: 0.1px solid black;
+    // background: yellow;
+    margin: 0 auto;
+}
+.el-dates .days {
+    text-align: right;
+    font-weight: bold;
+}
+
+.el-dates.location {
+    text-align: left;    
+}
+
+.main-text {
+    padding: 2em 0;
+}
+
+.centered-button {
+    padding: 2rem 0;
+    text-align: center;
+    img {
+        width: 140px;
+        height: auto;    
+    }
+}
+
+.light-link {
+    padding: 0.4rem 0;
+    a {
+        color:#bdc3c7;
+    }
+}
